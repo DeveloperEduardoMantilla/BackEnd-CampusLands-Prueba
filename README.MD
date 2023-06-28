@@ -2,6 +2,25 @@
 
 A continuación se enumeran los endpoints disponibles en esta API:
 
+Paso a paso para su ejecucion
+
+1. Contar con base de datos de nombre campuslands
+2. cargar variables de entorno, aqui monto el como debe ir 
+
+DB_DRIVER="mysql"
+DB_HOST="127.0.0.1"
+DB_PORT="3306"
+DB_DATABASE="campuslands"
+DB_USERNAME="root"
+DB_PASSWORD=""
+
+estas variables de entorno deben estar en un archivo .env en la raiz del proyecto
+
+
+Modificaciones a base de datos
+
+Se agrego campo a la tabla campers que guardara el numero de documento de los campers
+se combio el tipo de dato de idCamper, estaba varchar lo pase a int, para que quedara como llave primaria de tipo INT
 ## pais
 
 - (GET) http://localhost/Backend-Api-Php/pais => Obtiene datos de la tabla pais
